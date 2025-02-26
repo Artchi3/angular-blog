@@ -2,13 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100%; 
     height: auto;
     flex-direction: column;
     margin-bottom: 1rem;
     h1{
         color: #FFFFFF;
-        font-size: 135px;
+        font-size: 80px;
         font-family: "segoe UI";
     }
     hr{
@@ -16,3 +16,10 @@
         display: block;
     }
 }
+@media (min-width: 860px) {
+    .container_menuTitle{ 
+        h1{ 
+            font-size: 135px; 
+        } 
+    }
+  }

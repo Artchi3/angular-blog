@@ -19,17 +19,9 @@
         width: 100%;
     }
 }
-header{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
 
-@media (min-width: 860px) {
-  body {
-    background-color: lightblue;
-  }
+
+@media (min-width: 860px) { 
   .container_articles{
     flex-direction: row;
   }

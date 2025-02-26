@@ -1,0 +1,51 @@
+.container_content{ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .content_cover{ 
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.26);
+        img{
+            width: 100%; 
+            object-fit: cover;
+            
+        }
+    }
+    .content_title{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        h1{
+            color: #FFFFFF;
+            font-size: 40px;
+            font-family: "segoe UI";
+        }
+    }
+    .content_desc{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 1rem 10%;
+        a{
+            color: #FFFFFF;
+            font-size: 14px;
+            font-family: "segoe UI";
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #FFFFFF;
+            font-size: 14px;
+            font-family: "segoe UI";
+        }
+    }
+}
