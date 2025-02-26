@@ -24,15 +24,11 @@ export class ContentComponent implements OnInit{
     this.setValToComponent(this.id)  
   } 
   setValToComponent(id:string|null):void{
-    const result:any = dataFake.filter(article => article.id == id)[0]
-    console.log(result)
+    const result:any = dataFake.filter(article => article.id == id)[0] 
     
-    this.contentDesc = result.body
+    this.contentDesc = result.body.split('__')
     this.contentTitle = result.headline
-    this.coverPic = result.image
-    console.log(this.contentDesc)
-    console.log(this.contentTitle)
-    console.log(this.coverPic) 
+    this.coverPic = result.image 
   }
 
 }

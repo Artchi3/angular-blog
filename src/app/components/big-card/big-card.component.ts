@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core'; 
 import { RouterLink } from '@angular/router';
+import { dataFake } from '../../data/dataFake';
 
 @Component({
   selector: 'app-big-card',
@@ -21,7 +22,15 @@ export class BigCardComponent {
   constructor(){
 
   }
-  ngOnInit():void{
-
+  ngOnInit():void{ 
+    console.log(this.Id)
+    this.setValToComponent(this.Id)  
+  } 
+  setValToComponent(id:string|null):void{
+    const result:any = dataFake.filter(article => article.id == id)[0] 
+    
+    this.cardDescription = result.abstract
+    this.cardTitle = result.headline
+    this.picCover = result.image 
   }
 }

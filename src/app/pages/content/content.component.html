@@ -8,6 +8,9 @@
     </div>
     <div class="content_desc">
         <a [routerLink]="['']"><< VOLTAR</a>
-        <p>{{contentDesc}}</p>
+        @for (text of contentDesc; track text) {
+            <p>{{ text }}</p>
+            <br>
+          } 
     </div>
 </div>
